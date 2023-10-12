@@ -3,35 +3,37 @@
 
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
 }
-.header{
-    width: 100%;
-    height: 121px;
-    background-color:#EAAE00 ;
+ul li{
+    list-style-type: none;
+   
+}
+a{
+    text-decoration: none;
+    display: inline-block;
 }
 .container{
     margin: 0 auto;
-    padding: 0 25px;
-    width: 1200px;
+    max-width: 1200px;
+    padding: 0 15px;
 }
+
+.header{
+    background-color:#EAAE00 ;
+}
+
 .header .container{ 
-    height:100%;
     background-color: #EAAE00;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0px;
 }
-a{
-    text-decoration: none;
-    color: aliceblue;
-    font-family: 'Poppins', sans-serif;
-}
-ul li{
-    list-style-type: none;
+.header-logo{
+    width: 100%;
 }
 
 .mode{
@@ -77,6 +79,9 @@ ul li{
 .icon{
     font-size: 24px;
     color: #ffffff;
+}
+.three-dod{
+ display: none;
 }
 
 /* start bannar */
@@ -128,9 +133,8 @@ ul li{
 }
 .bannar-buttom a:first-child{
     background-color: #00BFCB;
-    border: 3px solid #00BFCB;
+    border: 3px solid #7fa8ab;
     margin-right: 34px;
-
 }
 .bannar-buttom a:last-child{
     border: 3px solid #ffffff;
@@ -229,6 +233,9 @@ ul li{
     flex-direction: column;
     align-items: center;
 
+}
+.service-body .service-item img{
+    width: 100%;
 }
 .service-body .service-item h3{
     font-size: 38px;
@@ -627,3 +634,340 @@ padding-bottom: 38px;
      padding: 15px 15px;
     }
 /* last page end */
+
+
+
+
+
+
+/* ==============Responsive Start================ */
+
+
+
+@media screen and (max-width: 1250px) {
+    .header-logo{
+        width: 80%;
+    }
+   
+    .mode li a{
+        padding: 5px 10px;
+        font-size: 20px;
+        
+    }
+    .input{
+        width: 180px;
+        height: 40px;
+        padding: 0 12px;
+    }
+    .inbox{
+        width: 50px;
+        height: 40px;
+    }
+    .icon{
+        font-size: 15px;
+    }
+    .input::placeholder{
+        font-size: 15px;
+    }
+   
+.header .container{ 
+    padding: 10px 0px;
+}
+
+.bannar .container{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.bannar-content{
+    padding-right: 20px;
+   
+}
+
+.bannar-content h1{
+    font-size: 50px;
+    line-height: 54px;
+
+    
+}
+.bannar-content p{ 
+    font-size: 20px;
+    margin-top: 45px;
+}   
+.bannar-buttom{
+    margin-top: 70px;
+}
+.bannar-buttom a{
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+/* =======section-scound========== */
+.love-of-animal .container{
+    padding: 100px 0;
+   
+}
+.love-of-animal .container .text-content h2{
+    font-size: 40px;
+    line-height: 42px;
+   
+
+}
+.love-of-animal .container .text-content p{
+    font-size: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+
+}
+.love-of-animal .container .text-content a{
+    padding: 14px 18px;
+    margin-top: 40px;
+}
+.love-of-animal .container .text-content{
+    margin-left: 10px;
+}
+.service-section .container{
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+.service-heading h2{
+    font-size: 60px;
+   
+}
+.service-heading p{
+    font-size: 28px;
+    padding: 0 90px;
+    line-height: 32px;
+}
+.service-body .service-item h3{
+    font-size: 28px;
+    margin-top: 38px;
+    margin-bottom: 16px;
+}
+.service-body .service-item p{
+    font-size: 18px;
+}
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .header-menu{
+        display: none;
+    }
+    .header-menu .mode{
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        background-color: #53354A;
+       
+    }
+    .list-iteam{
+        display: none;
+    }
+    .mode li a{
+        color: #ffffff;
+    }
+    .mode li{
+        border-bottom: 1px solid #f4f3f3;
+    }
+    .mode li:last-of-type{
+        border-bottom: none;
+    }
+    .mode{
+        display: inline-block;
+       
+      
+    }
+    .header-menu.active{
+        display: inline-block;
+    }
+    .three-dod{
+        display: inline-block;
+       }
+       .bannar .container{
+        display: inline-block;
+       
+    }
+       
+       .bannar-content{
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+    }
+    .bannar-image{
+        width: 100%;
+        margin-top: 50px;
+      text-align: center;
+    }
+    .bannar .container{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .love-of-animal .container{
+        display: inline-block;
+        text-align: center;
+    }
+    .love-of-animal .container .text-content{
+        width: 100%;
+        padding: 0 28px;
+    }
+    .love-of-animal .container .image-content{
+        width: 100%;
+      
+    }
+    .service-heading h2{
+        font-size: 50px;
+       
+    }
+    .service-heading p{
+        font-size: 20px;
+        padding: 0 60px;
+        line-height: 24px;
+    }
+    .service-body .service-item h3{
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+    .service-body .service-item p{
+        font-size: 16px;
+    }
+    .service-body{ 
+        margin-top: 60px;
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .bannar-content h1{
+        font-size: 40px;
+        line-height: 44px;
+}
+    .bannar-buttom a{
+         padding: 5px 10px;
+         font-size: 14px;
+}
+.bannar-buttom a:first-child{
+    border: 2px solid #00BFCB;
+    
+}
+.bannar-buttom a:last-child{
+    border: 2px solid #ffffff;
+}
+.bannar-buttom{
+    margin-top: 40px;
+
+}
+}
+
+@media screen and (max-width: 650px) {
+    .service-body{
+    display: inline-block;
+     
+    }
+    .service-body .service-item{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .service-body .service-item p{
+       margin-bottom: 20px;
+    }
+    .service-heading p{
+        padding: 0 30px;
+    }
+    
+    .service-body{ 
+        margin-top: 40px;
+    }
+    .service-section .container{
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .bannar-content h1{
+        font-size: 36px;
+        line-height: 40px;
+}
+.bannar-content p{ 
+    font-size: 20px;
+    margin-top: 40px;
+}
+.header-logo a img{
+    width: 80%;
+}
+.love-of-animal .container{
+    padding: 80px 0;
+   
+}
+.love-of-animal .container .text-content h2{
+    font-size: 30px;
+    line-height: 34px;
+   
+
+}
+.love-of-animal .container .text-content p{
+    font-size: 16px;
+    padding-right: 18px;
+    margin-top: 36px;
+
+}
+.love-of-animal .container .image-content{
+    padding: 20px;
+}
+.love-of-animal .container .text-content{
+    padding: 0 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.service-heading h2{
+    font-size: 40px;
+   
+}
+
+
+
+}
+@media screen and (max-width: 350px){
+    .bannar-content h1{
+        font-size: 30px;
+        line-height: 34px;
+}
+.bannar-content p{ 
+    font-size: 16px;
+    margin-top: 30px;
+}
+.love-of-animal .container .text-content{
+    padding: 0px;
+}
+.love-of-animal .container .text-content h2{
+    font-size: 26px;
+    line-height: 30px;
+   
+
+}
+.love-of-animal .container .text-content p{
+    font-size: 15px;
+    padding-right: 0px;
+  
+
+}
+
+}
+
+
+
+
+
